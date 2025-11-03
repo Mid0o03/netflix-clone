@@ -1,0 +1,130 @@
+/* style.css - Netflix Clone */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: #e50914;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.profile {
+  font-size: 1.5rem;
+}
+
+.banner {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1610034986945-0f7e3b33297c?fit=crop&w=1500&q=80') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  padding: 2rem;
+}
+
+.banner-content {
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.banner-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.banner-buttons button {
+  margin-right: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.play {
+  background-color: white;
+  color: black;
+}
+
+.info {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+
+.banner-buttons button:hover {
+  opacity: 0.8;
+}
+
+main {
+  padding: 2rem;
+}
+
+.row {
+  margin-bottom: 2rem;
+}
+
+.row h2 {
+  margin-bottom: 1rem;
+}
+
+.row-posters {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row-posters img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.row-posters img:hover {
+  transform: scale(1.08);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #111;
+  color: #888;
+  font-size: 0.9rem;
+}
